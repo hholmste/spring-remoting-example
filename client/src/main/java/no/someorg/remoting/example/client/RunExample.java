@@ -40,6 +40,12 @@ public class RunExample {
 		LOG.info("Mike is {}", mike);
 		
 		LOG.info("... and this is his family:\n{}", mike.familyTree());
+		
+		Person mikesFirstSibling = mike.getSiblings().get(0);
+		Person mikesSecondSibling = mike.getSiblings().get(1);
+		
+		LOG.info("The family seen from the siblings's point of view:\n{}\n{}", mikesFirstSibling.familyTree(), mikesSecondSibling.familyTree());
+		
 	}
 	
 }
