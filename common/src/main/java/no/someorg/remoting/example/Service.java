@@ -1,5 +1,7 @@
 package no.someorg.remoting.example;
 
+import no.someorg.remoting.example.circular.Person;
+
 /**
  * Stuff that should be implemented on the server and used on the client
  * 
@@ -8,5 +10,7 @@ package no.someorg.remoting.example;
 public interface Service {
 
 	String calculateRemoteMessage();
+
+	Person retrievePerson(String name);
 	
 }
