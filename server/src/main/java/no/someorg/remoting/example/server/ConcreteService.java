@@ -22,11 +22,15 @@ public class ConcreteService implements Service, Serializable {
 
 	public Person retrievePerson(String name) {
 		LOG.info("Looking for {}", name);
+		
 		if ("Mike".equals(name)) {
 			LOG.info("Returning Mike.");
+		
 			return PersonFactory.createMike();
 		}
+		
 		LOG.info("{} wasn't found.", name);
+		
 		return null;
 	}
 

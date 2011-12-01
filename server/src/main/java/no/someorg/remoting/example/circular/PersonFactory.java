@@ -8,12 +8,14 @@ public class PersonFactory {
 		Person bob = spouses("Bob", "Lily");
 		Person kelly = spouses("Kelly", "John");
 
-		Person mikesWife = new Person().withName("Laura");
+		Person mikesWife = new Person().withName("Lea");
 		Person mike = new Person().withName("Mike").withSpouse(mikesWife).withSiblings(Arrays.asList(bob, kelly));
 		mikesWife.withSpouse(mike);
 		
 		bob.withSiblings(Arrays.asList(mike, kelly));
 		kelly.withSiblings(Arrays.asList(mike, bob));
+		
+		
 		
 		return mike;
 	}

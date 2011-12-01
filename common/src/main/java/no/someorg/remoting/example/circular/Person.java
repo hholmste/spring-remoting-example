@@ -52,9 +52,4 @@ public class Person implements Serializable {
 		return b.toString();
 	}
 	
-	public static void main(String[] args) {
-		System.out.println("test:");
-		System.out.println(PersonFactory.createMike().familyTree());
-	}
-	
 }
